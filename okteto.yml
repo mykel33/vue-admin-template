@@ -1,0 +1,10 @@
+name: frontend
+image: okteto/vuejs-template:dev
+command:
+  - npm install
+  - npm run dev
+  - npm run build
+sync:
+  - .:/src
+persistentVolume:
+  enabled: false
