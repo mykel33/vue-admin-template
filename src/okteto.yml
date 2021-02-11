@@ -1,8 +1,9 @@
 name: frontend
 image: okteto/vuejs-template:dev
-command: npm install
-command: npm run dev
-command: npm run build
+command:
+  - npm install
+  - npm run dev
+  - npm run build
 sync:
   - .:/src
 persistentVolume:
